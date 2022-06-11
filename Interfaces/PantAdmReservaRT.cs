@@ -17,6 +17,16 @@ namespace PPAICU23.Interfaces
             InitializeComponent();
         }
 
+        private void pant_Load(object sender, EventArgs e)
+        {
+            cargarCmbTipoRecursos();
+
+        }
+
+        private void cargarCmbTipoRecursos()
+        {
+
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -27,9 +37,6 @@ namespace PPAICU23.Interfaces
 
         }
 
-        private void pant_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

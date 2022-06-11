@@ -72,6 +72,7 @@
     <Compile Include="Interfaces\PrincipalForm.Designer.cs">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Persistencia\PersistenciaDatos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Interfaces\PantAdmReservaRT.resx">
