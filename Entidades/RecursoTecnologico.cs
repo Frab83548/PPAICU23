@@ -12,7 +12,11 @@ namespace PPAICU23.Clases
         public DateTime? fechaAlta { get; set; }
 
 
+        private RecursoTecnologico obtenerRecursoTecnologicoNoenBaja() {
 
+            RecursoTecnologico recurso = new RecursoTecnologico();
+            return  recurso;
+        }
     }
 
 }
