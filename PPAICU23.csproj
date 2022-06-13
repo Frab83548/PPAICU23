@@ -60,6 +60,12 @@
     <Compile Include="Entidades\Turno.cs" />
     <Compile Include="Entidades\Usuario.cs" />
     <Compile Include="Gestor\GestorReservaRT.cs" />
+    <Compile Include="Interfaces\ListadoTurnosRT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\ListadoTurnosRT.Designer.cs">
+      <DependentUpon>ListadoTurnosRT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\PantAdmReservaRT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,14 +78,26 @@
     <Compile Include="Interfaces\PrincipalForm.Designer.cs">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Listado-SelccionRT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Listado-SelccionRT.Designer.cs">
+      <DependentUpon>Listado-SelccionRT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Persistencia\PersistenciaDatos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Interfaces\ListadoTurnosRT.resx">
+      <DependentUpon>ListadoTurnosRT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\PantAdmReservaRT.resx">
       <DependentUpon>PantAdmReservaRT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\PrincipalForm.resx">
       <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Listado-SelccionRT.resx">
+      <DependentUpon>Listado-SelccionRT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

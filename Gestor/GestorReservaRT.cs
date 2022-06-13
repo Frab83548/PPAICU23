@@ -12,8 +12,8 @@ namespace PPAICU23.Gestor
     class GestorReservaRT
     {
         public List<TipoRecursoTecnologico> tipoDeRecursosTecnologicos;
-        public PantAdmReservaRT principal;
-        public GestorReservaRT(PantAdmReservaRT _principal)
+        public PantAdmReserva principal;
+        public GestorReservaRT(PantAdmReserva _principal)
         {
             principal = _principal;
             //this.tipoDeRecursosTecnologicos = new List<TipoRecursoTecnologico>();
@@ -37,7 +37,10 @@ namespace PPAICU23.Gestor
             BuscarRTcorrespondiente(tipoRT);
         }
 
-        private void BuscarRTcorrespondiente(String nombreTR) { }
+        private void BuscarRTcorrespondiente(String nombreTR) { 
+         
+
+        }
             
     }
 }

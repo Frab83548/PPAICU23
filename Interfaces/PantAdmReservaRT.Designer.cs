@@ -1,7 +1,7 @@
 ﻿
 namespace PPAICU23.Interfaces
 {
-    partial class PantAdmReservaRT
+    partial class PantAdmReserva
     {
         /// <summary>
         /// Required designer variable.
@@ -38,44 +38,44 @@ namespace PPAICU23.Interfaces
             // 
             this.LblTiposRT.AutoSize = true;
             this.LblTiposRT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTiposRT.Location = new System.Drawing.Point(127, 34);
-            this.LblTiposRT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblTiposRT.Location = new System.Drawing.Point(169, 42);
             this.LblTiposRT.Name = "LblTiposRT";
-            this.LblTiposRT.Size = new System.Drawing.Size(200, 18);
+            this.LblTiposRT.Size = new System.Drawing.Size(253, 24);
             this.LblTiposRT.TabIndex = 0;
             this.LblTiposRT.Text = "Tipos de recursos tenlogicos";
             // 
             // CBtiposRT
             // 
             this.CBtiposRT.FormattingEnabled = true;
-            this.CBtiposRT.Location = new System.Drawing.Point(115, 69);
-            this.CBtiposRT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CBtiposRT.Location = new System.Drawing.Point(153, 85);
+            this.CBtiposRT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CBtiposRT.Name = "CBtiposRT";
-            this.CBtiposRT.Size = new System.Drawing.Size(216, 21);
+            this.CBtiposRT.Size = new System.Drawing.Size(287, 24);
             this.CBtiposRT.TabIndex = 1;
             // 
             // btnContinuar
             // 
-            this.btnContinuar.Location = new System.Drawing.Point(251, 109);
+            this.btnContinuar.Location = new System.Drawing.Point(335, 134);
+            this.btnContinuar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnContinuar.Name = "btnContinuar";
-            this.btnContinuar.Size = new System.Drawing.Size(75, 23);
+            this.btnContinuar.Size = new System.Drawing.Size(100, 28);
             this.btnContinuar.TabIndex = 2;
             this.btnContinuar.Text = "Continuar";
             this.btnContinuar.UseVisualStyleBackColor = true;
             this.btnContinuar.Click += new System.EventHandler(this.btnContinuar_Click);
             // 
-            // PantAdmReservaRT
+            // PantAdmReserva
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnContinuar);
             this.Controls.Add(this.CBtiposRT);
             this.Controls.Add(this.LblTiposRT);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "PantAdmReservaRT";
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "PantAdmReserva";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PantAdmReservaRT";
+            this.Text = "PantAdmReserva";
             this.Load += new System.EventHandler(this.pant_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

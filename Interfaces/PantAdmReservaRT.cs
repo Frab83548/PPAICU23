@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace PPAICU23.Interfaces
 {
-    public partial class PantAdmReservaRT : Form
+    public partial class PantAdmReserva : Form
     {
         private GestorReservaRT gestor;
-        public PantAdmReservaRT()
+        public PantAdmReserva()
         {
             InitializeComponent();
             gestor = new GestorReservaRT(this);
@@ -68,5 +68,24 @@ private void btnContinuar_Click(object sender, EventArgs e)
             String tipodeRT = CBtiposRT.GetItemText(CBtiposRT.SelectedItem);
             this.gestor.TomarSeleccionDeTR(tipodeRT);
         }
+       /* public void tomarSeleccionTarifa()
+        {
+            // Toma los datos de la tarifa seleccionada y se los envia como parametro al gestor
+            var tarifaSeleccionada = new List<string>();
+
+            var entrada = ((TipoEntrada)cmb_tipo_entrada.SelectedItem).id_tipo_entrada.ToString();
+            var visita = ((TipoVisita)cmb_tipo_visita.SelectedItem).id_tipo_visita.ToString();
+            var guia = ck_guiado.Checked.ToString();
+
+            tarifaSeleccionada.Add(entrada);
+            tarifaSeleccionada.Add(visita);
+            tarifaSeleccionada.Add(guia);
+
+            this.gestor.tomarSeleccionTarifa(tarifaSeleccionada);
+        }
+
+*/
+
+
     }
 }

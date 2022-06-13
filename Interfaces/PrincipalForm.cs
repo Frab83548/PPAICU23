@@ -20,7 +20,7 @@ namespace PPAICU23.Interfaces
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            PantAdmReservaRT v1 = new PantAdmReservaRT();
+            PantAdmReserva v1 = new PantAdmReserva();
             v1.Show();
 
         }
