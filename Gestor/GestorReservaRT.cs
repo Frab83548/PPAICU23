@@ -7,10 +7,12 @@ using PPAICU23.Clases;
 using PPAICU23.Interfaces;
 using PPAICU23.Persistencia;
 
+
 namespace PPAICU23.Gestor
 {
     class GestorReservaRT
     {
+
         public List<TipoRecursoTecnologico> tipoDeRecursosTecnologicos;
         public PantAdmReserva principal;
         public GestorReservaRT(PantAdmReserva _principal)
@@ -23,7 +25,7 @@ namespace PPAICU23.Gestor
 
         public List<String> BuscarTiposDeRT()
         {
-            PersistenciaDatos datos = new PersistenciaDatos();
+           PersistenciaDatos datos = new PersistenciaDatos();
             List<String> tipoRecursos = new List<String>();
             foreach (TipoRecursoTecnologico tipoRecurso in datos.TipoRecursos)
             {
@@ -37,10 +39,19 @@ namespace PPAICU23.Gestor
             BuscarRTcorrespondiente(tipoRT);
         }
 
-        private void BuscarRTcorrespondiente(String nombreTR) { 
-         
+        private void BuscarRTcorrespondiente(String tipoRT) 
+        {
+            PersistenciaDatos datos = new PersistenciaDatos();
+            List<TipoRecursoTecnologico> tipoRecursos = new List<TipoRecursoTecnologico>();
+            foreach (RecursoTecnologico recurso in datos.recursosTec)
+            {
+                if(recurso.obtenerNombreRecursoTecnologico() == tipoRT)
+                recurso.conocerTipoRt();
+            }
+
 
         }
+       
             
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PPAICU23.Gestor;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace PPAICU23.Interfaces
         public PrincipalForm()
         {
             InitializeComponent();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)

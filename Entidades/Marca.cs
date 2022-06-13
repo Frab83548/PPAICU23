@@ -11,5 +11,12 @@ namespace PPAICU23.Clases
         public string Nombre { get; set; }
 
         public List <Modelo> modelos { get; set; }
+
+        public Marca(string Nombre, List <Modelo> modelos)
+        {
+            this.Nombre = Nombre;
+            this.modelos = modelos; 
+
+        }
     }
 }

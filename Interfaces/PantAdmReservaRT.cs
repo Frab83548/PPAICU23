@@ -52,13 +52,14 @@ namespace PPAICU23.Interfaces
        
 private void btnContinuar_Click(object sender, EventArgs e)
         {
+            
             if (CBtiposRT.GetItemText(CBtiposRT.SelectedItem) == "")
             {
                 MessageBox.Show("No ha seleccionado ningun Recurso Tecnologico");
             }
             else
             {
-                tomarSeleccionDeTipodeRT();
+               tomarSeleccionDeTipodeRT();
             }
 
         }

@@ -10,43 +10,41 @@ namespace PPAICU23.Clases
     {
         public int numeroRT { get; set; }
         public DateTime fechaAlta { get; set; }
-        public bool bajaTecnica { get; set; }
-        public bool bajaDefinitiva { get; set; }
+       
 
         public TipoRecursoTecnologico tipoRT { get; set; }
+        public CambioDeEstadoRT cambioE { get; set; } 
 
-        public RecursoTecnologico(int numeroRT, DateTime fechaAlta, bool bajaTecnica, bool bajaDefinitiva )
+       
+        public RecursoTecnologico(int numeroRT, DateTime fechaAlta, TipoRecursoTecnologico tipoRT, CambioDeEstadoRT cambioE)
         {
             this.numeroRT = numeroRT;
             this.fechaAlta = fechaAlta;
-            this.bajaTecnica = bajaTecnica;
-            this.bajaDefinitiva = bajaDefinitiva;
+            this.tipoRT = tipoRT;
+            this.cambioE = cambioE;
 
         }
-        public bool esReservable()
-        {
-            if(bajaTecnica==false && bajaDefinitiva == false)
-            {
-                return true;
-            }
-            return false;
-        }
+        
 
         public TipoRecursoTecnologico conocerTipoRt()
         {
             //devuelve el puntero del recurso tecnolofico
             return this.tipoRT;
         }
+        public string obtenerNombreRecursoTecnologico()
+        {
+            return this.tipoRT.getNombre();
+        }
 
 
         }
 
 
-        private RecursoTecnologico obtenerRecursoTecnologicoNoenBaja() {
+       /* private RecursoTecnologico obtenerRecursoTecnologicoNoenBaja() {
 
             RecursoTecnologico recurso = new RecursoTecnologico();
             return  recurso;
         }
-    }
+    }*/
 
 }

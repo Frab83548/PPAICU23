@@ -10,6 +10,11 @@ namespace PPAICU23.Clases
     {
         public string Nombre { get; set; }
 
+        public Modelo(string nombre)
+        {
+            this.Nombre = nombre;
+        }
+
 
     }
 }

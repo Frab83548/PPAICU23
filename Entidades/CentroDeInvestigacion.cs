@@ -10,5 +10,11 @@ namespace PPAICU23.Clases
     {
         public string Nombre  { get; set; }
         public List<RecursoTecnologico> RecursosTecnologicos{ get; set; }
+
+        public CentroDeInvestigacion(string nombre, List<RecursoTecnologico> recusosTec)
+        {
+            this.Nombre = nombre;
+            this.RecursosTecnologicos = recusosTec;
+        }
     }
 }
